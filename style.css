@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* PRECSS */
+
+/* 要素 */
+body {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    z-index: 99;
+    position: absolute;
+}
+
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.el_txt__red{
+    color: #ff0000;
+    font-size: 110%;
+}
+
+.el_txt__orange{
+    color: #ff8018;
+    font-size: 110%;
+}
+
+.el_txt__pink{
+    color: #ff6666;
+    font-size: 110%;
+}
+
+.el_txt__blue{
+    color: #1897ff;
+    font-size: 110%;
+}
+
+.el_btn__sns{
+    display: inline;
+    margin: 4px;
+}
+
+.ly_header {
+        margin: -50px auto;
+        margin-bottom: 0px;
+        width: 100%;
+        position: fixed;
+    }
+
+.ly_body {
+    margin-top: 50px;
+}
+.ly_footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.ly_logo {
+    height: 30px;
+    background-color: rgba(248, 248, 248, 0.9);
+    float: left;
+    margin: 10px 20px;
+}
+
+.ly_logo img {
+    height: 30px;
+}
+
+.bl_mainvisual{
+    width: 100%;
+	padding: 0;
+	position: relative;
+    margin-bottom: 20px;
+}
+
+.bl_mainvisual_img {
+    width: 100%;
+}
+
+.bl_mainvisual_txt {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    font-size: 250%;
+    font-family:;
+    color: #000;
+    text-shadow: 0 2px 10px #fff, 0 2px 10px #fff, 0 2px 10px #fff, 0 2px 20px #fff, 0 2px 30px #fff, 0 2px 40px #fff;
+    opacity: 0.5;
+}
+
+.bl_sns {
+
+}
+
+.bl_sect {
+    margin: 20px;
+    margin-top: -50px; /* 固定ナビの高さ分のネガティブマージン */
+    padding-top: 50px; /* 打ち消し用のパディング */
+    min-height: 400px;
+}
+
+.bl_sect_ttl {
+    text-align: left;
+}
+
+h2.bl_sect_ttl {
+    min-height: 30px;
+    padding-top: 0.2em;
+    font-size: 160%;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+h2.bl_sect_ttl::before {
+    content: " ";
+    background-image: url(img/logo.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    margin-right: 4px;
+}
+
+.bl_sect_txt {
+    text-align: left;
+}
+.bl_sect_txt__lrg {
+    font-size: 180%;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 400px) {
+    /* ウインドウ幅500px以上の時に適用されるスタイル */
+
+    h2.bl_sect_ttl {
+        font-size: 200%;
+        min-height: 40px;
+        padding-top: 0.1em;
+    }
+
+    h2.bl_sect_ttl::before {
+        height: 40px;
+        width: 40px;
+        margin-right: 6px;
+    }
+
+    .bl_sect_txt__lrg {
+        font-size: 160%;
+    }
+}
+
+
+@media (min-width: 767px) {
+    /* ウインドウ幅500px以上の時に適用されるスタイル */
+    .bl_sect_txt__lrg {
+        font-size: 300%;
+    }
+}
+
+.bl_sect_table {
+}
+
+.bl_sect_thead {
+
+}
+.bl_sect_th {
+    text-align: center;
+}
+.bl_sect_tbody {
+
+}
+.bl_sect_tr {
+
+}
+.bl_sect_td {
+    text-align: center;
+
+}
+.bl_sect_img {
+    padding: 10px;
+}
+
+.bl_sect_img>li {
+    list-style: none;
+}
+
+.bl_copy {
+
+}
+
+/* トップに戻るボタン */
+.bl_btn_BackToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #ff6666;
+    display: none;
+    color: #ffffff;
+    opacity: 0.9;
+
+    /* 透明度をふわっと変える演出 */
+    transition: opacity .25s;
+
+    font-size: 3rem;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* マウスを乗せた時に透明度を変える */
+.bl-btn-BackToTop:hover {
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+
+/* bootstrap */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #ff6666;
+    transition: 0.4s;
+}
+
+ul.navbar-nav li:hover {
+    background-color: #ffcccc;
+    transition: 0.4s;
+}
+
+
+.navbar-default {
+    background-color: rgba(248, 248, 248, 0.9);
+}
+
+/* id要素（一時的にブロックごと非表示にする要素） */
+#charge{
+    display: none;
+}
