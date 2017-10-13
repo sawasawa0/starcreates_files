@@ -136,6 +136,12 @@ h2.bl_sect_ttl::before {
     text-align: center;
 }
 
+.bl_sect_txt__para {
+    line-height: 1.3em;
+    margin: 0.8em;
+    background-color: #ff0000;
+}
+
 @media (min-width: 400px) {
     /* ウインドウ幅500px以上の時に適用されるスタイル */
 
