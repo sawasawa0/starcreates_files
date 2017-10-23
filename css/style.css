@@ -164,7 +164,7 @@ h2.bl_sect_ttl {
 
 h2.bl_sect_ttl::before {
     content: " ";
-    background-image: url(img/logo.svg);
+    background-image: url(https://sawasawa0.github.io/starcreates_files/img/logo.svg);
     background-repeat: no-repeat;
     display: inline-block;
     height: 34px;
